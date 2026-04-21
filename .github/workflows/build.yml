@@ -25,6 +25,9 @@ jobs:
           sudo apt update
           sudo apt install -y nasm gcc make binutils
 
+      - name: Create build directory
+        run: mkdir -p build
+
       - name: Build boot image
         run: make
 
