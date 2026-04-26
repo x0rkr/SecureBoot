@@ -44,12 +44,16 @@ $(BUILD)/integrity.o: $(SRC)/security/integrity.c
 $(BUILD)/main.o: $(SRC)/kernel/main.c
 	$(CC) $(CCFLAGS) -c $< -o $@
 
+$(BUILD)/shell.o: $(SRC)/kernel/shell.c
+	$(CC) $(CCFLAGS) -c $< -o $@
+
 # Link Stage 2 + C objects into binary
 $(BUILD)/stage2.bin: $(BUILD)/stage2_entry.o \
                      $(BUILD)/screen.o \
                      $(BUILD)/disk.o \
                      $(BUILD)/crypto.o \
                      $(BUILD)/integrity.o \
+                     $(BUILD)/shell.o \
                      $(BUILD)/main.o
 	$(LD) $(LDFLAGS) $^ -o $@
 

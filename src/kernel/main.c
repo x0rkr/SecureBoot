@@ -9,6 +9,7 @@
 #include "../include/screen.h"
 #include "../include/crypto.h"
 #include "../include/integrity.h"
+#include "../include/shell.h"
 
 /* Boot password XOR encryption key */
 static const unsigned char xor_key[KEY_LEN] = {
@@ -154,11 +155,8 @@ void kernel_main(void) {
     screen_println("  [+] Kernel decrypted.", COLOR_BRIGHT_GREEN);
     screen_println("  [+] Booting...",        COLOR_BRIGHT_WHITE);
 
-    /* Step 5: Jump to decrypted kernel */
-    void (*kernel_entry)(void) = (void(*)(void))0x100000;
-    kernel_entry();
-
-    /* Should never reach here */
+   run_boot_menu();
     while(1);
 }
+
 
