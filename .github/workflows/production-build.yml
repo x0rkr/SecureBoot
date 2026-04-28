@@ -39,5 +39,5 @@ jobs:
       - name: Upload boot image v4
         uses: actions/upload-artifact@v4
         with:
-          name: boot-image
+          name: secureboot-bin-v4
           path: build/boot.bin
