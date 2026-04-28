@@ -1,9 +1,3 @@
-# ===========================================================
-# SecureBoot Project — GitHub Actions CI/CD
-# Dev: x0rkr | github.com/x0rkr
-# Automatically builds boot.bin on every push
-# ===========================================================
-
 name: Build SecureBoot
 
 on:
@@ -15,7 +9,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -36,8 +29,8 @@ jobs:
           ls -lh build/boot.bin
           echo "[+] Boot image built successfully"
 
-      - name: Upload boot image v4
+      - name: Upload boot image artifact
         uses: actions/upload-artifact@v4
         with:
-          name: secureboot-bin-v4
+          name: boot-image-v4
           path: build/boot.bin
