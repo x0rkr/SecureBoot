@@ -36,7 +36,7 @@ jobs:
           ls -lh build/boot.bin
           echo "[+] Boot image built successfully"
 
-      - name: Upload boot image artifact
+      - name: Upload boot image v4
         uses: actions/upload-artifact@v4
         with:
           name: boot-image
