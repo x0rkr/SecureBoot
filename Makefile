@@ -1,6 +1,6 @@
 # ===========================================================
 # SecureBoot Project — Makefile
-# Dev: x0rkr | github.com/x0rkr
+# Dev: radi0aktiv | github.com/radi0aktiv
 # ===========================================================
 
 AS       = nasm
@@ -64,7 +64,7 @@ $(BUILD)/boot.bin: $(BUILD)/stage1.bin $(BUILD)/stage2.bin
 	dd if=$(BUILD)/stage2.bin of=$@ conv=notrunc bs=512 seek=1
 	@echo ""
 	@echo "  [+] Build SUCCESS: $(BUILD)/boot.bin"
-	@echo "  [+] Dev: x0rkr | github.com/x0rkr"
+	@echo "  [+] Dev: radi0aktiv | github.com/radi0aktiv"
 	@echo ""
 # Run in QEMU
 run: $(BUILD)/boot.bin

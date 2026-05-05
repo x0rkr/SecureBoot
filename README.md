@@ -3,7 +3,7 @@
 > A fully custom, from-scratch bootloader written in NASM Assembly and C.
 > No standard library. No shortcuts. Pure bare-metal.
 
-**Dev:** x0rkr | **GitHub:** [github.com/x0rkr](https://github.com/x0rkr)
+**Dev:** radi0aktiv | **GitHub:** [github.com/radi0aktiv](https://github.com/radi0aktiv)
 
 ---
 
@@ -98,7 +98,7 @@ Address                           Contents
 
 License
 
-MIT © 2026 x0rkr
+MIT © 2026 radi0aktiv
 
 
 

@@ -10,4 +10,4 @@ Pull requests are welcome.
 
 Please keep all code stdlib-free and bare-metal compatible.
 
-**Dev:** x0rkr | github.com/x0rkr
+**Dev:** radi0aktiv | github.com/radi0aktiv

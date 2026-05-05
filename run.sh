@@ -1,7 +1,7 @@
 #!/bin/bash
 # ===========================================================
 # SecureBoot Project — QEMU Run Script
-# Dev: x0rkr | github.com/x0rkr
+# Dev: radi0aktiv | github.com/radi0aktiv
 # ===========================================================
 
 BOOT_IMG="build/boot.bin"

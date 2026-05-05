@@ -1,7 +1,7 @@
 /*
  * SecureBoot Project
- * Dev: x0rkr
- * GitHub: github.com/x0rkr
+ * Dev: radi0aktiv
+ * GitHub: github.com/radi0aktiv
  *
  * Bare-metal x86 authenticated bootloader
  * Written in NASM Assembly + C (no stdlib)

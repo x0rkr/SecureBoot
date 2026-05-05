@@ -1,6 +1,6 @@
 /*
  * SecureBoot Project - Boot Menu + Mini Shell
- * Dev: x0rkr | github.com/x0rkr
+ * Dev: radi0aktiv | github.com/radi0aktiv
  */
 
 #include "../include/shell.h"
@@ -116,7 +116,7 @@ static void cmd_help(void) {
 }
 
 static void cmd_whoami(void) {
-    screen_println("  x0rkr", COLOR_BRIGHT_GREEN);
+    screen_println("  radi0aktiv", COLOR_BRIGHT_GREEN);
 }
 
 static void cmd_pwd(void) {
@@ -214,13 +214,13 @@ static void run_shell(void) {
     screen_clear();
     screen_println("  ==============================", COLOR_BRIGHT_CYAN);
     screen_println("   SecureBoot Shell  v1.0        ", COLOR_BRIGHT_WHITE);
-    screen_println("   Dev: x0rkr | github.com/x0rkr", COLOR_YELLOW);
+    screen_println("   Dev: radi0aktiv | github.com/radi0aktiv", COLOR_YELLOW);
     screen_println("  ==============================", COLOR_BRIGHT_CYAN);
     screen_println("  Type 'help' for commands", COLOR_WHITE);
     screen_println("", COLOR_WHITE);
 
     while (1) {
-        screen_print("  x0rkr@secureboot:", COLOR_BRIGHT_GREEN);
+        screen_print("  radi0aktiv@secureboot:", COLOR_BRIGHT_GREEN);
         screen_print(cwd, COLOR_BRIGHT_CYAN);
         screen_print("# ", COLOR_BRIGHT_WHITE);
         shell_readline(cmd, 128);
@@ -251,7 +251,7 @@ static void draw_boot_menu(void) {
     screen_println("", COLOR_WHITE);
     screen_println("  ==============================", COLOR_BRIGHT_CYAN);
     screen_println("     SECUREBOOT - BOOT MENU     ", COLOR_BRIGHT_WHITE);
-    screen_println("     Dev: x0rkr                 ", COLOR_YELLOW);
+    screen_println("     Dev: radi0aktiv                 ", COLOR_YELLOW);
     screen_println("  ==============================", COLOR_BRIGHT_CYAN);
     screen_println("", COLOR_WHITE);
     screen_println("  [1]  Boot OS",     COLOR_BRIGHT_GREEN);
@@ -279,8 +279,8 @@ void run_boot_menu(void) {
             screen_println("  System Info:", COLOR_BRIGHT_CYAN);
             screen_println("  -------------------------", COLOR_BRIGHT_CYAN);
             screen_println("  Project : SecureBoot v1.0", COLOR_WHITE);
-            screen_println("  Dev     : x0rkr", COLOR_WHITE);
-            screen_println("  GitHub  : github.com/x0rkr", COLOR_WHITE);
+            screen_println("  Dev     : radi0aktiv", COLOR_WHITE);
+            screen_println("  GitHub  : github.com/radi0aktiv", COLOR_WHITE);
             screen_println("  Arch    : x86 32-bit Protected Mode", COLOR_WHITE);
             screen_println("  Stack   : 0x90000", COLOR_WHITE);
             screen_println("  VGA     : 0xB8000", COLOR_WHITE);

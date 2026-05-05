@@ -74,7 +74,7 @@ disk_error:
 boot_drive   db 0
 retry_count  db 3
 msg_banner   db 0x0D, 0x0A, "[SecureBoot] Stage 1 v1.0", 0x0D, 0x0A, \
-               "  Developed by x0rkr | github.com/x0rkr", 0x0D, 0x0A, 0
+               "  Developed by radi0aktiv | github.com/radi0aktiv", 0x0D, 0x0A, 0
 msg_a20      db "[*] A20 enabled", 0x0D, 0x0A, 0
 msg_loading  db "[*] Loading Stage 2...", 0x0D, 0x0A, 0
 msg_ok       db "[+] Jumping to Stage 2...", 0x0D, 0x0A, 0

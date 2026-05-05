@@ -48,7 +48,7 @@ gdt_descriptor:
     dw gdt_end - gdt_start - 1
     dd gdt_start
 
-msg_stage2 db "[*] Stage 2 active | Dev: x0rkr", 0x0D, 0x0A, 0
+msg_stage2 db "[*] Stage 2 active | Dev: radi0aktiv", 0x0D, 0x0A, 0
 
 [BITS 32]
 global start32

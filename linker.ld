@@ -1,6 +1,6 @@
 /*
  * SecureBoot Project — Linker Script
- * Dev: x0rkr | github.com/x0rkr
+ * Dev: radi0aktiv | github.com/radi0aktiv
  *
  * Ensures correct memory layout:
  * Stage 2 loads at 0x8000
